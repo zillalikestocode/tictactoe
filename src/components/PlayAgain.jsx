@@ -31,8 +31,8 @@ const PlayAgain = ({setAgain, oneName, twoName, winOne, winTwo}) => {
             scale: 0.6
         }
     }
-    const one = oneName === "" ? 'Player One' : props.oneName;
-  const two = twoName === "" ? 'Player Two' : props.twoName;
+    const one = oneName === "" ? 'Player One' : oneName;
+  const two = twoName === "" ? 'Player Two' : twoName;
   return (
     <motion.div className='top-0 right-0 fixed h-screen w-full bg-gray-800/50' variants={variants} initial="initial" animate="animate" exit="exit">
         <AnimatePresence>{(winOne || winTwo) && <motion.div className=" m-auto mt-24 bg-slate-900 rounded-xl p-5 w-fit flex flex-col gap-3" variants={open}>
