@@ -37,8 +37,8 @@ const InputName = ({name, setOneName, setTwoName, setName}) => {
         <AnimatePresence>{name && <motion.div className=" m-auto mt-24 bg-slate-900 rounded-xl p-5 w-fit" variants={open}>
             <h4 className='text-center text-md text-amber-500 mb-4 font-medium'>Please enter your names</h4>
             <form className='flex flex-col gap-3' onSubmit={(e) => closeName(e)}>
-                <input onChange={(e) => setOneName(e.target.value)} className="focus:outline-none focus:outline-amber-500 p-2 rounded-lg w-56 bg-gray-700 " type="text" placeholder='Player 1' />
-                <input onChange={(e) => setTwoName(e.target.value)} className="focus:outline-none focus:outline-amber-500 p-2 rounded-lg w-56 bg-gray-700 " type="text" placeholder='Player 2' />
+                <input onChange={(e) => setOneName(e.target.value)} className="text-amber-500 focus:outline-none focus:outline-amber-500 p-2 rounded-lg w-56 bg-gray-700 " type="text" placeholder='Player 1' />
+                <input onChange={(e) => setTwoName(e.target.value)} className="text-amber-500 focus:outline-none focus:outline-amber-500 p-2 rounded-lg w-56 bg-gray-700 " type="text" placeholder='Player 2' />
                 <Button text="Let's Play" type="submit"/>
             </form>
         </motion.div>}</AnimatePresence>

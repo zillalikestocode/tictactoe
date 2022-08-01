@@ -7,10 +7,7 @@ const Header = (props) => {
 
   return (
     <div className='w-full flex items-center'>
-      <h4 className='text-sm font-medium text-amber-500 text-center w-full'>{props.oneTurn ? `${one}'s turn` : `${two}'s turn`}</h4>
-        <div className='ml-auto w-fit '>
-            <Button text='Reset' />
-        </div>
+      <h4 className='text-md font-medium text-amber-500 text-center w-full'>{props.oneTurn ? `${one}'s turn` : `${two}'s turn`}</h4>
     </div>
   )
 }
